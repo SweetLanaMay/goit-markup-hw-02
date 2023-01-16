@@ -24,11 +24,7 @@
 
 body {
 font-family: var(--main-font);
-font-style: normal;
-font-weight: 400;
 font-size: 16px;
-line-height: calc(24 / 16);
-letter-spacing: 0.02em;
 color: var(--text);
 }
 
@@ -62,9 +58,10 @@ color: var(--primary-brand);
 color: var(--dark);
 }
 
-.header-list {
-font-family: var(--main-font);
+.header-link {
+line-height: 1.5;
 font-weight: 500;
+letter-spacing: 0.02em;
 color: var(--dark);
 }
 
@@ -79,6 +76,8 @@ color: var(--pressed-state);
 
 .address-link {
 font-style: normal;
+line-height: 1.5;
+letter-spacing: 0.02em;
 color: currentColor;
 }
 
@@ -96,9 +95,8 @@ background: var(--dark);
 }
 
 .hero-title {
-font-weight: 700;
 font-size: 56px;
-line-height: 60px;
+line-height: calc(60 / 56);
 color: var(--white);
 text-align: center;
 }
@@ -121,21 +119,22 @@ background-color: var(--pressed-state);
 /* Our advantages styles */
 /* ------------------------------------ */
 
-.section-second-title,
-.team-person {
+.section-subtitle {
 font-weight: 500;
 font-size: 20px;
 line-height: calc(24 / 20);
 color: var(--dark);
+}
+.section-text {
+line-height: 1.5;
+letter-spacing: 0.02em; 
 }
 
 /* ------------------------------------------ */
 /*  What are we doing styles*/
 /* ------------------------------------------ */
 
-.gallery-title,
-.team-title {
-font-weight: 700;
+.section-title {
 font-size: 36px;
 line-height: calc(40 / 36);
 text-transform: capitalize;
@@ -151,7 +150,7 @@ color: var(--dark);
 background-color: var(--light);
 }
 .team-item {
-    background-color: var(--white);
+ background-color: var(--white);
 }
 
 /* ------------------------------------ */
@@ -166,9 +165,9 @@ background-color: var(--light);
 cursor: pointer;
 }
 
-.filters-btn-first {
-color: var(--white);
-background-color: var(--pressed-state);
+.filters-btn:hover,
+.filters-btn:focus {
+color: var(--pressed-state);
 }
 
 /* ------------------------------------ */
@@ -194,5 +193,7 @@ background-color: var(--dark);
 color: var(--light);
 }
 .footer-text {
+line-height: 1.5;
+letter-spacing: 0.02em;
 color: var(--accent);
 }
