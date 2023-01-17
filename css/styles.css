@@ -97,6 +97,7 @@ background: var(--dark);
 .hero-title {
 font-size: 56px;
 line-height: calc(60 / 56);
+letter-spacing: 0.02em;
 color: var(--white);
 text-align: center;
 }
@@ -123,11 +124,13 @@ background-color: var(--pressed-state);
 font-weight: 500;
 font-size: 20px;
 line-height: calc(24 / 20);
+letter-spacing: 0.02em;
 color: var(--dark);
 }
+
 .section-text {
 line-height: 1.5;
-letter-spacing: 0.02em; 
+letter-spacing: 0.02em;
 }
 
 /* ------------------------------------------ */
@@ -137,6 +140,7 @@ letter-spacing: 0.02em;
 .section-title {
 font-size: 36px;
 line-height: calc(40 / 36);
+letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--dark);
 }
@@ -160,6 +164,7 @@ background-color: var(--light);
 .filters-btn {
 font-family: inherit;
 font-weight: 500;
+letter-spacing: 0.04em;
 color: var(--primary-brand);
 background-color: var(--light);
 cursor: pointer;
@@ -167,19 +172,15 @@ cursor: pointer;
 
 .filters-btn:hover,
 .filters-btn:focus {
-color: var(--pressed-state);
+color: var(--white);
+background-color: var(--pressed-state);
 }
 
 /* ------------------------------------ */
 /*  Portfolio */
 /* ------------------------------------- */
 
-.portfolio-name {
-font-weight: 500;
-font-size: 20px;
-line-height: calc(24 / 20);
-color: var(--dark);
-}
+
 
 
 /* ------------------------------------ */
